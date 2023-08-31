@@ -1,0 +1,17 @@
+<%- include('./partials/header') -%>
+<div id="game">
+    <div class="main-game">
+        <p class="title">Play Game</p>
+        <div class="head">
+            <div class="num-box" id="box"><p class="num" id="number" name="number">?</p></div>
+        </div>
+        <div class="input">
+            <p>Enter a number:</p>
+            <input type="number" min="0" max="100" name="input" id="">
+            <p id="status"></p>
+        </div>
+        <button id="submit" onclick="checkNumber()" class="green submit-num">submit</button>
+        <button id="refresh-btn" hidden onclick="reloadPage()" class="yellow submit-num refresh">play again</button>
+    </div>
+</div>
+<%- include('./partials/footer') -%>

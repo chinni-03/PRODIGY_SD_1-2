@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">TemCon</a>
+        </div>
+    </nav>
+    <div class="body">
+        <div id="white" class="flex-center">
+            <div class="convert">
+                <div id="input">
+                    <input type="number" name="" id="temp-value">
+                </div>
+                <div id="init">
+                    <p id="init-unit">Select a unit</p>
+                    <select name="" id="unit" class="unit" required>
+                        <option value="Celcius">Celcius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div id="convert">
+                    <p id="convert-unit">Convert to</p>
+                    <select name="" id="convert-to" class="unit" required>
+                        <option value="Celcius">Celcius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <button id="convert-btn" onclick="convert()">convert</button>
+            </div>
+        </div>
+        <div id="cyan" class="flex-center">
+            <div class="convert">
+                <div id="converted"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made by V Harshini</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

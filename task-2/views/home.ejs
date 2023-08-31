@@ -1,0 +1,13 @@
+<%- include('./partials/header') -%>
+<div id="game">
+    <p class="question-mark">?</p>
+    <div class="ready">
+        <p class="ready-txt">Ready to play the game?</p>
+        <div>
+            <form action="/play-game" class="btns">
+                <button onclick="this.form.submit()" class="btn green">Yes!</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('./partials/footer') -%>
